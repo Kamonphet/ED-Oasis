@@ -1,6 +1,6 @@
 # Sorndai
 
-#user password Example
+#user password Example:
 phet
 123456789
 Role: Teacher
