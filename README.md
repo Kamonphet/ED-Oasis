@@ -13,7 +13,6 @@ phet
 Role: Teacher
 
 
-Student
 สมชาย
 111111
 Role: Student
