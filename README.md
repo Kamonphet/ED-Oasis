@@ -3,16 +3,14 @@
 #user password Example:
 
 
-Admin
-Admin
-Role:Admin
+สถานะ:Admin
+ชื่อผู้ใช้งาน: Admin  password: Admin 
 
 
-phet
-123456789
-Role: Teacher
+สถานะ: Teacher 
+ชื่อผู้ใช้งาน: phet password: 123456789 
 
 
-สมชาย
-111111
-Role: Student
+สถานะ: Student 
+ชื่อผู้ใช้งาน: สมชาย  password:111111 
+
