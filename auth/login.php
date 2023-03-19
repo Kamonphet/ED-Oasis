@@ -1,7 +1,7 @@
 <?php
 //กันแจ้งเตือน warning
 error_reporting(E_ALL ^ E_WARNING);
-require $_SERVER['DOCUMENT_ROOT'] . "../CED312/vendor/autoload.php";
+require $_SERVER['DOCUMENT_ROOT'] . "../ED-Oasis/vendor/autoload.php";
 ?>
 
 <!DOCTYPE html>

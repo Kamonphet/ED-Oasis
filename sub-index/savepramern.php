@@ -1,6 +1,6 @@
 <?php 
 error_reporting(E_ALL ^ E_WARNING); 
-require $_SERVER['DOCUMENT_ROOT']."../CED312/vendor/autoload.php";
+require $_SERVER['DOCUMENT_ROOT']."../ED-Oasis/vendor/autoload.php";
 
 use App\model\Mform;
 use App\Model\Mpramern;

@@ -1,7 +1,7 @@
 <?php
 error_reporting(E_ALL ^ E_WARNING);
-require $_SERVER['DOCUMENT_ROOT'] . "../CED312/vendor/autoload.php";
-require $_SERVER['DOCUMENT_ROOT'] . "../CED312/auth/auth.php";
+require $_SERVER['DOCUMENT_ROOT'] . "../ED-Oasis/vendor/autoload.php";
+require $_SERVER['DOCUMENT_ROOT'] . "../ED-Oasis/auth/auth.php";
 
 
 
@@ -31,7 +31,7 @@ $post=$postObj->getpostByid($ppost);
 </head>
 <body class="kanit">
     <?php 
-        require $_SERVER['DOCUMENT_ROOT'] . "/CED312/Index/navbar.php";
+        require $_SERVER['DOCUMENT_ROOT'] . "/ED-Oasis/Index/navbar.php";
         if ($_GET['msg']=='create suscessfully') {
             echo '<div id="alert-3" class="flex p-4 mb-4 bg-green-100 rounded-lg dark:bg-green-200" role="alert">
                     <svg class="flex-shrink-0 w-5 h-5 text-green-700 dark:text-green-800" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
@@ -145,7 +145,7 @@ $post=$postObj->getpostByid($ppost);
                                 <p>หน่วยการเรียนรู้ที่ : <b><?php echo"9999999999"; ?></b></p>
                                 </div>
                                 <div>
-                                <p>เรื่อง : <b><?php echo"ของกู"; ?></b></p>
+                                <p>เรื่อง : <b><?php echo"123456"; ?></b></p>
                                 </div>
                                 <div>
                                 <p>ระดับชั้น : <b><?php echo"ชั้น"; ?></b></p>
@@ -179,7 +179,7 @@ $post=$postObj->getpostByid($ppost);
                                 <p>หน่วยการเรียนรู้ที่ : <b><?php echo"9999999999"; ?></b></p>
                                 </div>
                                 <div>
-                                <p>เรื่อง : <b><?php echo"ของกู"; ?></b></p>
+                                <p>เรื่อง : <b><?php echo"123456"; ?></b></p>
                                 </div>
                                 <div>
                                 <p>ระดับชั้น : <b><?php echo"ชั้น"; ?></b></p>
@@ -213,7 +213,7 @@ $post=$postObj->getpostByid($ppost);
                                 <p>หน่วยการเรียนรู้ที่ : <b><?php echo"9999999999"; ?></b></p>
                                 </div>
                                 <div>
-                                <p>เรื่อง : <b><?php echo"ของกู"; ?></b></p>
+                                <p>เรื่อง : <b><?php echo"123456"; ?></b></p>
                                 </div>
                                 <div>
                                 <p>ระดับชั้น : <b><?php echo"ชั้น"; ?></b></p>
@@ -247,7 +247,7 @@ $post=$postObj->getpostByid($ppost);
                                 <p>หน่วยการเรียนรู้ที่ : <b><?php echo"9999999999"; ?></b></p>
                                 </div>
                                 <div>
-                                <p>เรื่อง : <b><?php echo"ของกู"; ?></b></p>
+                                <p>เรื่อง : <b><?php echo"123456"; ?></b></p>
                                 </div>
                                 <div>
                                 <p>ระดับชั้น : <b><?php echo"ชั้น"; ?></b></p>

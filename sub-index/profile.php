@@ -1,7 +1,7 @@
 <?php
 error_reporting(E_ALL ^ E_WARNING);
-require $_SERVER['DOCUMENT_ROOT'] . "../CED312/vendor/autoload.php";
-require $_SERVER['DOCUMENT_ROOT'] . "../CED312/auth/auth.php";
+require $_SERVER['DOCUMENT_ROOT'] . "../ED-Oasis/vendor/autoload.php";
+require $_SERVER['DOCUMENT_ROOT'] . "../ED-Oasis/auth/auth.php";
 
 use App\model\user;
 use App\model\Mform;
@@ -31,7 +31,7 @@ foreach ($user as $user) {};
     <link rel="stylesheet" href="../dist/output.css">
 </head>
 <body>
-    <?php require $_SERVER['DOCUMENT_ROOT'] . "/CED312/Index/navbar.php";?>
+    <?php require $_SERVER['DOCUMENT_ROOT'] . "/ED-Oasis/Index/navbar.php";?>
     <?php 
         include("navbar.php");
     ?>

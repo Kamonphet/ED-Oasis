@@ -1,7 +1,7 @@
 <?php
 error_reporting(E_ALL ^ E_WARNING);
-require $_SERVER['DOCUMENT_ROOT'] . "../CED312/vendor/autoload.php";
-require $_SERVER['DOCUMENT_ROOT'] . "../CED312/auth/auth.php";
+require $_SERVER['DOCUMENT_ROOT'] . "../ED-Oasis/vendor/autoload.php";
+require $_SERVER['DOCUMENT_ROOT'] . "../ED-Oasis/auth/auth.php";
 
 use App\Model\Mform;
 use App\Model\user;
@@ -40,7 +40,7 @@ $valuser = array("kru" => $user[0]['Cuser'], "naklean" => $user[1]['Cuser']);
     <link rel="stylesheet" href="../css/font.css">
 </head>
 <body class="kanit">
-    <?php require $_SERVER['DOCUMENT_ROOT'] . "/CED312/Index/navbar.php";?>
+    <?php require $_SERVER['DOCUMENT_ROOT'] . "/ED-Oasis/Index/navbar.php";?>
     <div class="container w-full mx-auto pt-20">
 
         <div class="w-full px-4 md:px-0 md:mt-8 mb-16 text-gray-800 leading-normal">

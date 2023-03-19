@@ -1,6 +1,6 @@
 <?php 
 error_reporting(E_ALL ^ E_WARNING); 
-require $_SERVER['DOCUMENT_ROOT']."../CED312/vendor/autoload.php";
+require $_SERVER['DOCUMENT_ROOT']."../ED-Oasis/vendor/autoload.php";
 
 use App\model\Mpost;
 $formObj= new Mpost;
@@ -12,7 +12,7 @@ $formObj= new Mpost;
 //$_FILES=[ชื่อที่รับค่าrequestมา]= [tmp_name],[name],[size],[type],[error]
 
 if($_FILES['post_file_name']['tmp_name']){
-    $File_name ="/CED312/upload_cover_image/" . $_FILES['post_file_name']['name'];
+    $File_name ="/ED-Oasis/upload_cover_image/" . $_FILES['post_file_name']['name'];
 
     move_uploaded_file($_FILES['post_file_name']['tmp_name'], $_SERVER['DOCUMENT_ROOT'].$File_name);
 }

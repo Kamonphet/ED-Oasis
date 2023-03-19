@@ -7,4 +7,5 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
+    'abeautifulsite\\SimpleImage' => $vendorDir . '/claviska/simpleimage/src/abeautifulsite/SimpleImage.php',
 );

@@ -1,5 +1,5 @@
 <!-- class -->
-<?php require $_SERVER['DOCUMENT_ROOT']."/CED312/vendor/autoload.php";
+<?php require $_SERVER['DOCUMENT_ROOT'] . "../ED-Oasis/vendor/autoload.php";
 
 use App\Model\user;
 

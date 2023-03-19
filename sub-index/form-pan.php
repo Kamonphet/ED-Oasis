@@ -1,7 +1,7 @@
 <?php
 error_reporting(E_ALL ^ E_WARNING);
-require $_SERVER['DOCUMENT_ROOT'] . "../CED312/vendor/autoload.php";
-require $_SERVER['DOCUMENT_ROOT'] . "../CED312/auth/auth.php";
+require $_SERVER['DOCUMENT_ROOT'] . "../ED-Oasis/vendor/autoload.php";
+require $_SERVER['DOCUMENT_ROOT'] . "../ED-Oasis/auth/auth.php";
 
 
 use App\model\user;

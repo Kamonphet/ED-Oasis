@@ -32,6 +32,7 @@ class ComposerStaticInit6725daa52856e3d8316eddda286df171
 
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'abeautifulsite\\SimpleImage' => __DIR__ . '/..' . '/claviska/simpleimage/src/abeautifulsite/SimpleImage.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

@@ -1,7 +1,7 @@
 <?php
 //กันแจ้งเตือน warning
 error_reporting(E_ALL ^ E_WARNING);
-require $_SERVER['DOCUMENT_ROOT'] . "../CED312/vendor/autoload.php";
+require $_SERVER['DOCUMENT_ROOT'] . "../ED-Oasis/vendor/autoload.php";
 ?>
 
 <!DOCTYPE html>
@@ -57,11 +57,11 @@ require $_SERVER['DOCUMENT_ROOT'] . "../CED312/vendor/autoload.php";
                             <hr class="mb-5">
                             <!-- สอนชั้นไหน สอนวิชาอะไร -->
                             <div class="mb-6">
-                                <label for="grade" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">สอนระดับชั้น</label>
+                                <label for="grade" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">สอนระดับชั้น/เรียนระดับชั้น</label>
                                 <input type="number" id="class_id" name="class_id" min='1' max="6" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"  placeholder="ชั้นมัธยมศึกษาปีที่" required>
                             </div>
                             <div class="mb-6">
-                                <label for="subject_teach" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">วิชาที่สอน</label>
+                                <label for="subject_teach" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">วิชาที่สอน/วิชาที่สนใจ</label>
                                 <select name='subject_id' id='subject_id' class='mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm' required>
                                     <option value=''>---</option>
                                     <option value='1'>ภาษาไทย</option>

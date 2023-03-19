@@ -1,7 +1,7 @@
 <?php
 error_reporting(E_ALL ^ E_WARNING);
-require $_SERVER['DOCUMENT_ROOT'] . "../CED312/vendor/autoload.php";
-require $_SERVER['DOCUMENT_ROOT'] . "../CED312/auth/auth.php";
+require $_SERVER['DOCUMENT_ROOT'] . "../ED-Oasis/vendor/autoload.php";
+require $_SERVER['DOCUMENT_ROOT'] . "../ED-Oasis/auth/auth.php";
 
 use App\model\user;
 use App\model\Mpost;
@@ -30,7 +30,7 @@ $pramernObj = new Mpramern;
     <link rel="stylesheet" href="../css/font.css">
 </head>
 <body>
-<?php require $_SERVER['DOCUMENT_ROOT'] . "/CED312/Index/navbar.php";
+<?php require $_SERVER['DOCUMENT_ROOT'] . "/ED-Oasis/Index/navbar.php";
     
     if ($_GET['msg']=='create suscessfully') {
         echo '<div id="alert-3" class="flex p-4 mb-4 bg-green-100 rounded-lg dark:bg-green-200" role="alert">
