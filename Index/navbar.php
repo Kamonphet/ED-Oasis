@@ -19,9 +19,9 @@ error_reporting(E_ALL ^ E_WARNING);
           </div>
         </div>
         <!-- Items1,2 -->
-        <!-- logo -->
+        <!-- Logo -->
         <div class="mx-auto">
-          <a href="../Index/main_menu.php"><h1 class="text-3xl font-semibold text-blue-500"><img src="../img/logo.png" class="w-10" alt=""></h1></a>
+          <a href="../Index/main_menu.php"><h1 class="text-3xl font-semibold text-blue-500"><img src="../img/Logo.png" class="w-20" alt=""></h1></a>
         </div>
         <!-- Items 1,3 -->
         <div class="mx-auto flex">
@@ -50,7 +50,7 @@ error_reporting(E_ALL ^ E_WARNING);
             <div class="flex items-center md:order-2 ml-3 ">
                 <!-- Profile -->
                 <button type="button" data-dropdown-toggle="language-dropdown-menu" class="inline-flex items-center justify-center p-2 text-sm  rounded  bg-white-100 ">
-                    <img class="h-8 w-8 mx-2 rounded-full" src="../img/logo.png" alt="">
+                    <img class="h-8 w-8 mx-2 rounded-full" src="../img/Logo.png" alt="">
                     <?php echo $_SESSION['user_sname']; ?>
                 </button>
                 <!-- DropDown -->

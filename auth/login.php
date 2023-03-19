@@ -22,10 +22,10 @@ require $_SERVER['DOCUMENT_ROOT'] . "../ED-Oasis/vendor/autoload.php";
 <body class="bg-cyan-100 kanit">
     <main>
         <div class="container w-auto h-screen m-auto grid justify-items-center items-center ">
-            <div class="p-3 mx-auto w-1/2 h-1/2 border rounded-lg grid grid-cols-2 shadow-lg bg-white">
+            <div class="p-3 mx-auto w-1/2  border rounded-lg grid grid-cols-2 shadow-lg bg-white">
                 <!-- Cols 1  -->
-                <div class="flex items-center mb-5 bg-blue-100 rounded">
-                    <img class="w-11/12 ml-4" src="../img/logo.png" alt="">                        
+                <div class="flex items-center  bg-blue-100 rounded">
+                    <img class="w" src="../img/Logo.png" alt="">      
                 </div>
 
                 <!-- Cols 2 -->

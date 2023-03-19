@@ -363,7 +363,7 @@ $form = $formObj->getallform();
         <div class="md:flex md:justify-between">
             <div class="mb-6 md:mb-0 ">
                 <a href="" class="flex items-center">
-                    <img src="../img/logo.png" class="mr-3 w-2/5" alt="" />
+                    <img src="../img/Logo.png" class="mr-3 w-2/5" alt="" />
                 </a>
             </div>
             <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
