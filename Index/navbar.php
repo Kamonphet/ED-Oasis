@@ -76,7 +76,7 @@ error_reporting(E_ALL ^ E_WARNING);
                             <a href="../sub-index/dashboard.php" class="block px-4 py-2 text-sm text-gray-700  hover:bg-gray-100" role="menuitem">
                                 <i class="fa-solid fa-chart-column"></i>
                                 <div class="inline-flex items-center">
-                                    ภาพรวมการประเมิน
+                                    ภาพรวมของระบบ
                                 </div>
                             </a>
                         </li>

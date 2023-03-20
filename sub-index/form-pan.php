@@ -39,8 +39,8 @@ if ($_REQUEST['action'] == 'edit') {
         <!-- Header -->
         <section class="w-1/2 mx-auto bg-white p-6 rounded-lg shadow-lg">
             <div class="container text-blue-800 mb-6">
-                <b><h1 class="text-4xl">สร้างแผนการสอนของคุณ</h1></b>
-                <p>สร้างแผนการสอนตามรายละเอียดที่กำหนด</p>
+                <b><h1 class="text-4xl">สร้างแผนการจัดการเรียนรู้ของคุณ</h1></b>
+                <p>สร้างแผนการจัดการเรียนรู้ตามรายละเอียดที่กำหนด</p>
             </div>
             <!-- Form -->
             <div>
@@ -78,7 +78,7 @@ if ($_REQUEST['action'] == 'edit') {
                     <!-- รายละเอียดแผนการสอน -->
                     <div class="mb-6">
                         <label for="detail_lp">
-                            <b><p class="text-blue-800">รายละเอียดแผนการสอน</p></b>
+                            <b><p class="text-blue-800">รายละเอียดของแผนการจัดการเรียนรู้</p></b>
                             <div class="grid grid-cols-2">
                                 <div class="mr-3">
                                     <label for="name_teacher">หน่วยการเรียนรู้ที่ </label>
@@ -99,7 +99,7 @@ if ($_REQUEST['action'] == 'edit') {
                     </div>
                     <!-- File drop -->
                     <div class="space-y-6 bg-white px-4 py-5 sm:p-6">
-                            <label class="block text-sm text-gray-700"> อัพโหลดไฟล์เอกสารเพิ่มเติม/สื่อการสอน </label>
+                            <label class="block text-sm text-gray-700"> อัพโหลดไฟล์เอกสาร/สื่อการสอนเพิ่มเติม </label>
                             <div class="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-md">
                                 <div class="space-y-1 text-center">
                                 <svg class="mx-auto h-12 w-12 text-gray-400" stroke="currentColor" fill="none" viewBox="0 0 48 48" aria-hidden="true">

@@ -32,7 +32,7 @@ if ($_SESSION['user_tier']=='Admin'){
     <script src="https://cdn.tailwindcss.com"></script>
     <title>ประเมินแผน</title>
 </head>
-<body>
+<body class="bg-blue-100">
     <div class="container mx-auto mt-6">
         <div>
             <div class="md:grid md:grid-cols-3 md:gap-6">
@@ -62,33 +62,33 @@ if ($_SESSION['user_tier']=='Admin'){
                     <div class="shadow sm:overflow-hidden sm:rounded-md">
                         <div class="space-y-6 bg-white px-4 py-5 sm:p-6">
                             <div class="col-span-6 sm:col-span-3">
-                                <label for="first-name" class="block text-sm font-medium text-gray-700">รายละเอียดการประเมิน</label>
+                                <label for="first-name" class="block text-sm font-medium text-gray-700">รายละเอียดการประเมิน (สำหรับผู้เรียน) </label>
                             </div>
                             <div class="grid grid-cols-6 gap-6">
                                 <div class="col-span-6 sm:col-span-3">
-                                    <label for="first-name" class="block text-sm font-medium text-gray-700">ด้านที่ 1 </label>
+                                    <label for="first-name" class="block text-sm font-medium text-gray-700">แผนการจัดการเรียนรู้มีความสนุก </label>
                                     <input type="number" name="eva_score" id=""class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" value="<?php echo $pramernbyid['eva_score']; ?>" required>
                                 </div>
 
                                 <div class="col-span-6 sm:col-span-3">
-                                    <label for="last-name" class="block text-sm font-medium text-gray-700">ด้านที่ 2</label>
+                                    <label for="last-name" class="block text-sm font-medium text-gray-700">มีการจัดการเรียนรู้ให้ได้ความรู้ตรงตามวัตถุประสงค์ </label>
                                     <input type="number" name="eva_score2" id="" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" value="<?php echo $pramernbyid['eva_score2']; ?>" required>
                                 </div>
                             </div>
                             <div class="grid grid-cols-6 gap-6">
                                 <div class="col-span-6 sm:col-span-3">
-                                    <label for="first-name" class="block text-sm font-medium text-gray-700">ด้านที่ 3 </label>
+                                    <label for="first-name" class="block text-sm font-medium text-gray-700">สามารถนำความรู้ที่ได้รับไปประยุกต์ใช้ต่อได้ </label>
                                     <input type="number" name="eva_score3" id=""class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" value="<?php echo $pramernbyid['eva_score3']; ?>" required>
                                 </div>
 
                                 <div class="col-span-6 sm:col-span-3">
-                                    <label for="last-name" class="block text-sm font-medium text-gray-700">ด้านที่ 4</label>
+                                    <label for="last-name" class="block text-sm font-medium text-gray-700">มีการจัดกิจกรรมการเรียนรู้ที่ช่วยส่งเสริมในการเรียนรู้ </label>
                                     <input type="number" name="eva_score4" id="" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" value="<?php echo $pramernbyid['eva_score4']; ?>" required>
                                 </div>
                             </div>
                             <div class="grid grid-cols-6 gap-6">
                                 <div class="col-span-6 sm:col-span-3">
-                                    <label for="first-name" class="block text-sm font-medium text-gray-700">ด้านที่ 5 </label>
+                                    <label for="first-name" class="block text-sm font-medium text-gray-700">มีการอธิบายวัตถุประสงค์และผลลัพธ์การเรียนรู้ </label>
                                     <input type="number" name="eva_score5" id=""class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" value="<?php echo $pramernbyid['eva_score5']; ?>" required>
                                 </div>
                             </div>
@@ -101,10 +101,10 @@ if ($_SESSION['user_tier']=='Admin'){
                         </div>
                             
                     </div>
-                    <div class="px-4 py-3 text-right sm:px-0 bg-slate-100">
+                    <div class="py-3 text-right sm:px-0 bg-slate-100">
                         <a href="../sub-index/all-post.php" class="hover:-translate-y-1 duration-300 hover:scale-100 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-red-600 hover:bg-red-700 focus:outline-none ">Cancel</a>
                         <button type="reset" class="hover:-translate-y-1 duration-300 hover:scale-100 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-yellow-500 hover:bg-yellow-600 focus:outline-none ">Reset</button>
-                        <button type="button" class="hover:-translate-y-1 duration-300 hover:scale-100 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none " data-modal-toggle="popup-modal">Save</button>
+                        <button type="button" class="mr-3 hover:-translate-y-1 duration-300 hover:scale-100 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none " data-modal-toggle="popup-modal">Save</button>
                     </div>
                     </div>
                     <div id="popup-modal" tabindex="-1" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 md:inset-0 h-modal md:h-full">

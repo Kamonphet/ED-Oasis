@@ -21,8 +21,8 @@ require $_SERVER['DOCUMENT_ROOT'] . "../ED-Oasis/vendor/autoload.php";
 </head>
 <body class=" bg-cyan-100 kanit">
     <main>
-        <div class="container w-auto h-screen m-auto grid justify-items-center items-center">
-            <div class="p-3 mx-auto border grid grid-cols-2 rounded-lg shadow-lg bg-white">
+        <div class="container ml-20 grid justify-items-center items-center ">
+            <div class="p-3 m-5 border grid grid-cols-2 rounded-lg shadow-lg bg-white">
                 <!-- Cols 1  -->
                 <div class="flex items-center ">
                     <img class="w-5/5 rounded-md" src="../img/bg5webp.webp" alt="">                        
@@ -95,23 +95,22 @@ require $_SERVER['DOCUMENT_ROOT'] . "../ED-Oasis/vendor/autoload.php";
                                 <label for="regis_password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">รหัสผ่าน</label>
                                 <input type="password" id="user_password" name="user_password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
                             </div>
-                            <div class="flex items-start">
+                            <div class="flex items-start ml-1">
                                 <div class="flex items-center h-5">
                                     <input id="terms" aria-describedby="terms" type="checkbox" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-primary-600 dark:ring-offset-gray-800" required="">
                                 </div>
                                 <div class="ml-3 text-sm">
-                                    <label for="terms" class="font-light text-gray-500 dark:text-gray-300" aria-required="">I accept the <a class="font-medium text-primary-600 hover:underline dark:text-primary-500" href="https://classroom.google.com/u/0/c/NDk3MjczMzE4MzAx/a/NTcyNTkwMzUwMjI2/details">Terms and Conditions</a></label>
+                                    <label for="terms" class="font-light text-gray-500 dark:text-gray-300" aria-required="">I accept the <a class="font-medium text-primary-600 hover:underline dark:text-primary-500" href="http://nsc.siit.tu.ac.th/GENA2/doc/20221121_NSC2023_Booklet.pdf">Terms and Conditions</a></label>
                                 </div>
                             </div>
 
                             <!-- submit -->
                             <div class="flex flex-wrap">
-                                <button type="submit" class="text-white bg-blue-700 hover:bg-blue-900 p-2 mx-auto w-full rounded-full">ลงทะเบียน</button>
+                                <button type="submit" class="text-white bg-blue-700 hover:bg-blue-900 p-2 w-full rounded-full">ลงทะเบียน</button>
                             </div>
-                            <div class="grid justify-items-center mt-2 text-gray-400 hover:text-blue-500">
-                                <a href="./login.php">ลงทะเบียนไปแล้วนี่หว่า -w-b</a>
+                            <div class="grid justify-items-center text-gray-400 hover:text-blue-500">
+                                <a href="./login.php">ลงทะเบียนไปแล้ว</a>
                             </div>
-                            
                         </form> 
                     </div>                    
                 </div>

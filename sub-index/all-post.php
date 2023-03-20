@@ -86,11 +86,12 @@ $pramernObj = new Mpramern;
                 foreach ($post as $post) {
                     $pramern = $pramernObj->averagepramern($post['post_id']);
                     foreach ($pramern as $pramern) {};
+                    // src img = {$post['post_file_id']}
                     echo "
                         <div class='w-auto m-2 '>     
                         <div class='max-w-sm bg-white border border-gray-200 rounded-lg shadow-md'>
                             <a href='./detail-post.php?post={$post['post_id']}'>
-                                <img class='rounded-t-lg' src='{$post['post_file_id']}'>
+                                <img class='rounded-t-lg' src='../img/Logo.png'>
                             </a>
                             <div class='p-5'>
                                 <h5 class='mb-2 text-2xl font-bold tracking-tight text-gray-900'>โพสต์ที่ {$post['post_id']} {$post['name']}</h5>

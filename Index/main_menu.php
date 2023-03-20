@@ -27,20 +27,22 @@ $form = $formObj->getallform();
     <link rel="stylesheet" href="../css/font.css">
 </head>
 <body class="kanit">
-  <div class="grid justify-items-end">
-        <div class="fixed bottom-0 right-0  m-6">
-            <a href="../sub-index/form-post.php">
-                <button class="p-0 w-16 h-16 bg-blue-600 rounded-full hover:bg-blue-700 active:shadow-lg mouse shadow transition ease-in duration-200 focus:outline-none">
-                    <svg viewBox="0 0 20 20" enable-background="new 0 0 20 20" class="w-6 h-6 inline-block">
-                        <path fill="#FFFFFF" d="M16,10c0,0.553-0.048,1-0.601,1H11v4.399C11,15.951,10.553,16,10,16c-0.553,0-1-0.049-1-0.601V11H4.601
-                                                C4.049,11,4,10.553,4,10c0-0.553,0.049-1,0.601-1H9V4.601C9,4.048,9.447,4,10,4c0.553,0,1,0.048,1,0.601V9h4.399
-                                                C15.952,9,16,9.447,16,10z" />
-                    </svg>
-                </button>
-            </a>
-            
-        </div>
-    </div>
+  <?php if ($_SESSION['user_tier']=='teacher'){
+    echo '
+      <div class="grid justify-items-end">
+            <div class="fixed bottom-0 right-0  m-6">
+                <a href="../sub-index/form-post.php">
+                    <button class="p-0 w-16 h-16 bg-blue-600 rounded-full hover:bg-blue-700 active:shadow-lg mouse shadow transition ease-in duration-200 focus:outline-none">
+                        <svg viewBox="0 0 20 20" enable-background="new 0 0 20 20" class="w-6 h-6 inline-block">
+                            <path fill="#FFFFFF" d="M16,10c0,0.553-0.048,1-0.601,1H11v4.399C11,15.951,10.553,16,10,16c-0.553,0-1-0.049-1-0.601V11H4.601
+                                                    C4.049,11,4,10.553,4,10c0-0.553,0.049-1,0.601-1H9V4.601C9,4.048,9.447,4,10,4c0.553,0,1,0.048,1,0.601V9h4.399
+                                                    C15.952,9,16,9.447,16,10z" />
+                        </svg>
+                    </button>
+                </a>
+            </div>
+      </div>
+    ';}?>
   <!-- NavBar -->
   <?php require $_SERVER['DOCUMENT_ROOT'] . "/ED-Oasis/Index/navbar.php";
     if ($_GET['msg']) {
@@ -343,6 +345,26 @@ $form = $formObj->getallform();
               <div class="items-center justify-center ">
                 <a href="../sub-index/form-pan.php">
                   <button type="button" class="text-gray-500 hover:text-gray-700 border rounded-full bg-white hover:ring-offset-2 ring border-red-500  ">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10">
+                      <path fill-rule="evenodd" d="M12 3.75a.75.75 0 01.75.75v6.75h6.75a.75.75 0 010 1.5h-6.75v6.75a.75.75 0 01-1.5 0v-6.75H4.5a.75.75 0 010-1.5h6.75V4.5a.75.75 0 01.75-.75z" clip-rule="evenodd" />
+                    </svg>
+                  </button>
+                </a>
+              </div>
+          </div>
+        </div>
+      </section>
+      ';
+    };
+    if ($_SESSION['user_tier']=='student'){
+      echo '
+        <section>
+        <div class="container w-auto mx-auto mb-4">
+          <div class="w-full p-4 text-center bg-red-200 shadow-lg rounded-lg">
+              <h5 class="mb-2 text-3xl font-bold text-gray-900 ">เริ่มต้นกรอกสิ่งที่ต้องการในการจัดกิจกรรมการเรียนรู้!</h5>
+              <div class="items-center justify-center ">
+                <a href="../sub-index/form-require.php">
+                  <button type="button" class="text-gray-500 hover:text-gray-700 border rounded-full bg-white hover:ring-offset-2 ring border-red-500">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10">
                       <path fill-rule="evenodd" d="M12 3.75a.75.75 0 01.75.75v6.75h6.75a.75.75 0 010 1.5h-6.75v6.75a.75.75 0 01-1.5 0v-6.75H4.5a.75.75 0 010-1.5h6.75V4.5a.75.75 0 01.75-.75z" clip-rule="evenodd" />
                     </svg>
