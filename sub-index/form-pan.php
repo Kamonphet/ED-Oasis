@@ -112,7 +112,7 @@ if ($_REQUEST['action'] == 'edit') {
                                 <p class="text-xs text-gray-500">PDF, ZIP up to 20MB</p>
                                 </div>
                             </div>
-                        </div>
+                    </div>
                     <div class="flex flex-row-reverse">
                         <button type="submit" class="p-2 bg-blue-400 text-white hover:bg-blue-700 rounded-lg m-1 shadow-lg" data-modal-toggle="popup-modal">บันทึกแผนการสอน</button>    
                         <button type="reset" class="p-2 bg-yellow-400 text-white hover:bg-orange-400 rounded-lg m-1 shadow-lg">เริ่มใหม่</button>
