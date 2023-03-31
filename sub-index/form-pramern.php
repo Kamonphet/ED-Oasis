@@ -40,7 +40,7 @@ if ($_SESSION['user_tier']=='Admin'){
 </head>
 <body class="kanit">
     <?php
-        require $_SERVER['DOCUMENT_ROOT'] . "/ED-Oasis/Index/navbar.php"; 
+        // require $_SERVER['DOCUMENT_ROOT'] . "/ED-Oasis/Index/navbar.php"; 
     ?>
     <main class="bg-blue-100 h-screen p-4">
         <section class="container mx-auto w-auto bg-white p-4 rounded-lg shadow-lg p-6">

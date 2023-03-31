@@ -33,7 +33,7 @@ if ($_REQUEST['action'] == 'edit') {
 </head>
 <body class="kanit">
     <?php
-        require $_SERVER['DOCUMENT_ROOT'] . "/ED-Oasis/Index/navbar.php"; 
+        // require $_SERVER['DOCUMENT_ROOT'] . "/ED-Oasis/Index/navbar.php"; 
         $user = $userObj->getuser($_SESSION['user_id']);
 
     ?>

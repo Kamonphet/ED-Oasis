@@ -5,15 +5,9 @@ require $_SERVER['DOCUMENT_ROOT'] . "../ED-Oasis/auth/auth.php";
 
 
 use App\model\user;
-use App\model\Mform;
 
 $userObj = new user;
-$formObj = new Mform;
 
-
-if ($_REQUEST['action'] == 'edit') {
-    $formbyid = $formObj->getformByid($_REQUEST['id']);
-}
 ?>
 
 <!DOCTYPE html>
@@ -36,7 +30,7 @@ if ($_REQUEST['action'] == 'edit') {
 
 <body class="kanit">
     <?php
-    require $_SERVER['DOCUMENT_ROOT'] . "/ED-Oasis/Index/navbar.php"; 
+    // require $_SERVER['DOCUMENT_ROOT'] . "/ED-Oasis/Index/navbar.php"; 
     $user = $userObj->getuser($_SESSION['user_id']);
 
     ?>
@@ -51,54 +45,53 @@ if ($_REQUEST['action'] == 'edit') {
                 <p>ฉันอยากเรียนด้วยวิธีนี้...</p>
             </div>
             <!-- Form -->
-            <form action="#" method="POST" enctype="multipart/form-data">
+            <form action="./saverequired.php" method="POST">
                 <input type="hidden" name="action" value="<?php echo ($_REQUEST['action'] == 'edit') ? "edit" : "add"; ?>">
                 <input type="hidden" name="user_id" value="<?php echo $_SESSION['user_id'] ?>"></input>
-                <input type="hidden" name="id" value="<?php echo $formbyid['lp_id'] ?>"></input>
                 <div class="mx-auto w-full">
                     <div class="grid grid-cols-3 ">
                         <div>
-                            <input id="checkbox-2" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 ">
+                            <input id="checkbox-2" type="radio" name="req_type" value="1" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 ">
                             <label for="checkbox-2" class="ml-2 text-md font-medium">ฟังบรรยาย</label>                            
                         </div>
                         <div>
-                            <input id="checkbox-2" type="checkbox" value="" class="ml-3 w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500">
+                            <input id="checkbox-2" type="radio" name="req_type" value="2" class="ml-3 w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500">
                             <label for="checkbox-2" class="ml-2 text-md font-medium text-gray-900 ">การอภิปรายกลุ่ม</label>
                         </div>
                         <div>
-                            <input id="checkbox-2" type="checkbox" value="" class="ml-3 w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 ">
+                            <input id="checkbox-2" type="radio" name="req_type" value="3" class="ml-3 w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 ">
                             <label for="checkbox-2" class="ml-2 text-md font-medium text-gray-900 ">ใช้เกม</label>                            
                         </div>
                         <div>
-                            <input id="checkbox-2" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 ">
+                            <input id="checkbox-2" type="radio" name="req_type" value="4" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 ">
                             <label for="checkbox-2" class="ml-2 text-md font-medium text-gray-900 ">การสาธิต</label>
                         </div>
                         <div>
-                            <input id="checkbox-2" type="checkbox" value="" class="ml-3 w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 ">
+                            <input id="checkbox-2" type="radio" name="req_type" value="5" class="ml-3 w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 ">
                             <label for="checkbox-2" class="ml-2 text-md font-medium text-gray-900">การแสดงละคร</label>
                         </div>
                         <div>
-                            <input id="checkbox-2" type="checkbox" value="" class="ml-3 w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 ">
+                            <input id="checkbox-2" type="radio" name="req_type" value="6" class="ml-3 w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 ">
                             <label for="checkbox-2" class="ml-2 text-md font-medium text-gray-900 ">สถานการณ์จำลอง</label>
                         </div>
                         <div>
-                            <input id="checkbox-2" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 ">
+                            <input id="checkbox-2" type="radio" name="req_type" value="7" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 ">
                             <label for="checkbox-2" class="ml-2 text-md font-medium text-gray-900 ">การทดลอง</label>
                         </div>
                         <div>
-                            <input id="checkbox-2" type="checkbox" value="" class="ml-3 w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 ">
+                            <input id="checkbox-2" type="radio" name="req_type" value="8" class="ml-3 w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 ">
                             <label for="checkbox-2" class="ml-2 text-md font-medium text-gray-900 ">การแสดงบทบาทสมมติ</label>
                         </div>
                         <div>
-                            <input id="checkbox-2" type="checkbox" value="" class="ml-3 w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 ">
+                            <input id="checkbox-2" type="radio" name="req_type" value="9" class="ml-3 w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 ">
                             <label for="checkbox-2" class="ml-2 text-md font-medium text-gray-900 ">ใช้ศูนย์การเรียน</label>
                         </div>
                         <div>
-                            <input id="checkbox-2" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 ">
+                            <input id="checkbox-2" type="radio" name="req_type" value="10" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 ">
                             <label for="checkbox-2" class="ml-2 text-md font-medium text-gray-900 ">การไปทัศนศึกษา</label>
                         </div>
                         <div>
-                            <input id="checkbox-2" type="checkbox" value="" class="ml-3 w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 ">
+                            <input id="checkbox-2" type="radio" name="req_type" value="11" class="ml-3 w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 ">
                             <label for="checkbox-2" class="ml-2 text-md font-medium text-gray-900 ">การใช้กรณีตัวอย่าง</label>
                         </div>
                         
@@ -106,7 +99,7 @@ if ($_REQUEST['action'] == 'edit') {
                     <div class="space-y-6 bg-white px-4 py-5 sm:p-6">
                         <label for="about" class="block text-md font-medium text-gray-700">ข้อเสนอแนะเพิ่มเติม</label>
                         <div class="mt-1">
-                            <textarea id="eva_comment" name="eva_comment" rows="10" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-md" placeholder="อยากให้จัดกิจกรรมการเรียนรู้แบบไหนเพิ่มเติมสามารถพิมพ์เข้ามาได้เลย" required><?php echo $formbyid['lp_info'] ?></textarea>
+                            <textarea  name="req_detail" rows="10" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-md" placeholder="อยากให้จัดกิจกรรมการเรียนรู้แบบไหนเพิ่มเติมสามารถพิมพ์เข้ามาได้เลย" required></textarea>
                         </div>
                     </div>
                     <div class="flex flex-row-reverse">

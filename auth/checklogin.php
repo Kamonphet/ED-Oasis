@@ -9,7 +9,7 @@ $result=$user_obj->checkuser($_REQUEST);
 
 
 if ($result) {
-    header("location: /ED-Oasis/index/main_menu.php?msg=sussess");
+    header("location: /ED-Oasis/index/main_menu.php?msg=success");
 }else{
     header("location: login.php?msg=error");
 }
