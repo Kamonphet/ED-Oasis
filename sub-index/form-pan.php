@@ -29,15 +29,15 @@ if ($_REQUEST['action'] == 'edit') {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/min.css">
 </head>
 <body class="kanit">
-    <?php 
+    <?php
+        require $_SERVER['DOCUMENT_ROOT'] . "/ED-Oasis/Index/navbar.php"; 
         $user = $userObj->getuser($_SESSION['user_id']);
+
     ?>
-    <main class="h-full bg-blue-100 p-6  mx-auto  ">
-        <!-- Header -->
-        <section class="w-1/2 mx-auto bg-white p-6 rounded-lg shadow-lg">
+    <section class="bg-white p-6 w-1/2 mx-auto">
             <div class="container text-blue-800 mb-6">
                 <b><h1 class="text-4xl">สร้างแผนการจัดการเรียนรู้ของคุณ</h1></b>
                 <p>สร้างแผนการจัดการเรียนรู้ตามรายละเอียดที่กำหนด</p>
@@ -142,9 +142,8 @@ if ($_REQUEST['action'] == 'edit') {
                     </div>
                 </form>
             </div>
-        </section>
+    </section>
 
-    </main>
 
 
     <script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>

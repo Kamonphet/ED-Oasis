@@ -12,7 +12,6 @@ $postObj = new Mpost;
 if ($_REQUEST['action'] == 'edit') {
     $postbyid = $postObj->getpostByid($_REQUEST['id']);
   }
-
 ?>
 
 <!DOCTYPE html>
@@ -28,12 +27,15 @@ if ($_REQUEST['action'] == 'edit') {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/min.css">
 </head>
 <body class="kanit">
-    <main class="bg-blue-100 mx-auto p-5">
-        <section class="w-1/2 mx-auto bg-white p-6 rounded-lg shadow-lg">
-            <div class="container text-blue-800 mb-6">
+    <?php
+        require $_SERVER['DOCUMENT_ROOT'] . "/ED-Oasis/Index/navbar.php"; 
+    ?>
+    <main class="bg-white p-6 w-1/2 mx-auto">
+        <section class="container ">
+            <div class="text-blue-800 mb-6">
                 <b><h1 class="text-4xl">โพสต์แผนการเรียนรู้ของคุณ</h1></b>
             </div>
             <!-- Form -->
@@ -41,7 +43,7 @@ if ($_REQUEST['action'] == 'edit') {
                 <form action="./saveform-post.php" method="POST" enctype="multipart/form-data">
                     <input type="hidden" name="action" value="<?php echo ($_REQUEST['action'] == 'edit') ? "edit" : "add"; ?>">
                     <input type="hidden" name="id" value="<?php echo $postbyid['post_id']?>"></input>
-                    <div class="shadow sm:overflow-hidden sm:rounded-md">
+                    <div class=" sm:overflow-hidden sm:rounded-md">
                     <!-- ชื่อแผน -->
                     <div class="mb-4">
                         <label for="date_post">วันที่โพสต์</label>
